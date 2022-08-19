@@ -3,13 +3,20 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "private": true,
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@playwright/test": "^1.24.2"
+    "@babel/core": "^7.5.4",
+    "@babel/preset-env": "^7.5.4",
+    "@playwright/test": "^1.24.2",
+    "babel-loader": "^8.0.6",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0"
   },
   "scripts": {
-    "test": "npx playwright test tests/test1.spec.ts --headed"
+    "test": "npx playwright test tests/test1.js --headed",
+    "build": "webpack --config webpack.config.js"
   }
 }
