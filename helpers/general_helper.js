@@ -3,9 +3,8 @@ import { HomePage } from '../pages/homePage';
 
 export class GeneralHelper {
 
-    page: Page;
-    constructor(page: Page) {
-        this.page = page;
+    constructor(Page) {
+        this.page = Page;
     }
 
     async navigate() {
